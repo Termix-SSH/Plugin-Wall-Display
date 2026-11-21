@@ -6,6 +6,12 @@
 
 <p>A full screen Termix layout for a TV or spare monitor that cycles through your status views</p>
 
+<!-- VIDEO:START -->
+
+<a href="https://www.youtube.com/watch?v=A8KqBOafA7U"><img src="https://img.shields.io/badge/Watch_the_demo-f59145?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch the demo on YouTube" /></a>
+
+<!-- VIDEO:END -->
+
 </div>
 
 <br />

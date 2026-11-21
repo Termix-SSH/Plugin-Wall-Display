@@ -1,12 +1,40 @@
-Hello World adds a tab where you can save short notes. It is a small example plugin to copy when you start your own.
+Wall Display turns Termix into a status board for a TV or spare monitor. There is no sidebar, no tab bar and nothing to edit. Each view fills the screen for a while, then the next one comes up.
 
-## Turn it on
+## Set it up
 
-1. Install Hello World from the Plugins tab.
-2. Open the Hello World tab from the sidebar.
+1. Make a user for the screen. A user with read only access to the hosts you want to show is best.
+2. Sign in as that user on the screen and pick Wall Display in Settings, Appearance.
+3. Press F or use the toolbar to go full screen.
 
-## Use it
+Termix remembers the layout for that user, so the screen comes back to the board after a restart.
 
-Type a note and press Add. Notes are stored on the server and each user sees only their own. Using the tab needs the Use Hello World permission, which admins and users get by default.
+## Views
 
-Admins can change the greeting at the top of the tab in Settings, under Hello World.
+The board shows these views in order:
+
+- Homepage, from the Homepage plugin
+- Uptime, from the Uptime plugin
+- Host Status, a board of every host and whether it is online
+- Network Topology, from the Network Topology plugin
+
+A view whose plugin is not installed is skipped. Host Status is built in, but it needs the Host Status plugin to know if hosts are online. Hosts with status checks turned off show as No status.
+
+## Settings
+
+Each user picks how long a view stays on screen (30 seconds by default) and which views to show. Change them in Settings under Wall Display before you switch layouts, or from another device signed in as the same user.
+
+## Controls
+
+Move the mouse or press a key to show the toolbar. It hides again after a few seconds, and so does the cursor.
+
+- Left and Right arrows go to the previous or next view
+- Space pauses and resumes
+- F goes full screen
+
+The views can't be clicked, so nobody changes anything by accident.
+
+## Leave the board
+
+Open the toolbar and use the Leave button. Change layout opens the layout picker, and Sign out signs the screen out. You can also add `?safe-layout=1` to the address.
+
+The screen stays awake while the board shows, in browsers that allow it.
